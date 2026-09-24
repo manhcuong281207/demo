@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khám Phá Việt Nam - Trang Chủ</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f8fafc;
+      color: #334155;
+      line-height: 1.6;
+    }
+
+    /* Header & Navigation */
+    header {
+      background-color: #ffffff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #0284c7;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #475569;
+      font-weight: 500;
+      padding: 0.5rem 0.8rem;
+      border-radius: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #0284c7;
+      background-color: #e0f2fe;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 4rem 1rem 3rem;
+      background: linear-gradient(180deg, #e0f2fe 0%, #f8fafc 100%);
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      color: #0f172a;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      color: #64748b;
+      max-width: 650px;
+      margin: 0 auto;
+    }
+
+    /* Content Container */
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .section-title {
+      font-size: 1.75rem;
+      margin-bottom: 2rem;
+      color: #1e293b;
+      position: relative;
+      padding-bottom: 0.5rem;
+    }
+
+    .section-title::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 50px;
+      height: 3px;
+      background-color: #0284c7;
+      border-radius: 2px;
+    }
+
+    /* Cards Grid */
+    .destinations-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      border: 1px solid #f1f5f9;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 1.5rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      color: #0f172a;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-desc {
+      color: #64748b;
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+      flex: 1;
+    }
+
+    .card-btn {
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+      background-color: #0284c7;
+      color: #ffffff;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      font-weight: 500;
+      transition: background-color 0.2s ease;
+    }
+
+    .card-btn:hover {
+      background-color: #0369a1;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2.5rem 1rem;
+      margin-top: 4rem;
+      border-top: 1px solid #e2e8f0;
+      background-color: #ffffff;
+      color: #94a3b8;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menu điều hướng -->
+  <header>
+    <nav>
+      <a href="index.html" class="logo">Du lịch Việt Nam</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Trang chủ</a></li>
+        <li><a href="hanoi.html">Hà Nội</a></li>
+        <li><a href="danang.html">Đà Nẵng</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero giới thiệu -->
+  <section class="hero">
+    <h1>Việt Nam - Vẻ Đẹp Bất Tận</h1>
+    <p>Hành trình khám phá dải đất hình chữ S qua những danh lam thắng cảnh kỳ vĩ, nền văn hóa ngàn năm và ẩm thực phong phú.</p>
+  </section>
+
+  <!-- Danh sách các điểm đến -->
+  <main class="container">
+    <h2 class="section-title">Điểm Đến Tiêu Biểu</h2>
+    
+    <div class="destinations-grid">
+      <!-- Thẻ Hà Nội -->
+      <div class="card">
+        <img src="image/Hanoi.jpg" alt="Hà Nội nghìn năm văn hiến">
+        <div class="card-body">
+          <h3 class="card-title">Thủ Đô Hà Nội</h3>
+          <p class="card-desc">Thủ đô nghìn năm văn hiến với nét cổ kính của 36 phố phường, Hồ Gươm tĩnh lặng và nền ẩm thực đường phố đặc sắc.</p>
+          <a href="hanoi.html" class="card-btn">Xem chi tiết &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Thẻ Đà Nẵng -->
+      <div class="card">
+        <img src="image/Danang.jpg" alt="Đà Nẵng thành phố đáng sống">
+        <div class="card-body">
+          <h3 class="card-title">Thành Phố Đà Nẵng</h3>
+          <p class="card-desc">Thành phố biển đáng sống bậc nhất Việt Nam với Cầu Rồng tráng lệ, bãi biển Mỹ Khê trong xanh và Bà Nà Hills tuyệt đẹp.</p>
+          <a href="danang.html" class="card-btn">Xem chi tiết &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Thẻ Vịnh Hạ Long -->
+      <div class="card">
+        <img src="image/Halong.jpg" alt="Vịnh Hạ Long">
+        <div class="card-body">
+          <h3 class="card-title">Vịnh Hạ Long</h3>
+          <p class="card-desc">Kỳ quan thiên nhiên thế giới nổi bật với hàng ngàn hòn đảo đá vôi kỳ vĩ nhô lên giữa làn nước ngọc bích.</p>
+          <a href="#halong" class="card-btn" style="background-color: #64748b;">Khám phá thêm</a>
+        </div>
+      </div>
+
+      <!-- Thẻ Hội An -->
+      <div class="card">
+        <img src="image/Hoian.jpg" alt="Phố cổ Hội An">
+        <div class="card-body">
+          <h3 class="card-title">Phố Cổ Hội An</h3>
+          <p class="card-desc">Đô thị cổ êm đềm bên dòng sông Hoài, lung linh sắc đèn lồng mỗi đêm và lưu giữ vẹn nguyên kiến trúc truyền thống.</p>
+          <a href="#hoian" class="card-btn" style="background-color: #64748b;">Khám phá thêm</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Bản tin du lịch Việt Nam. Dự án bài tập HTML/CSS.</p>
+  </footer>
+
+</body>
+</html>
